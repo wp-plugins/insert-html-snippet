@@ -2,27 +2,29 @@
 Contributors: f1logic
 Donate link: http://xyzscripts.com/donate/
 
-Tags: insert HTML, add HTML, insert javascript, add javascript, HTML to shortcode, integrate ad codes, raw html, embed html, html inserter
+Tags: insert HTML, add HTML,  insert javascript, add javascript, insert css, add css, HTML to shortcode, integrate ad codes, raw html, embed html, html inserter, ad inserter, css inserter
 Requires at least: 3.0
 Tested up to: 3.4.1
 Stable tag: 1.0
 License: GPLv2 or later
 
-Add HTML and javascript code to your pages and posts easily using shortcodes.
+Add HTML, CSS and javascript code to your pages and posts easily using shortcodes.
 
 == Description ==
 
 A quicklook into Insert Html Snippet
 
-★ Convert HTML snippets to shortcodes
-★ Support for shortcodes in widgets
-★ Dropdown menu in TinyMCE editor to pick snippets easily
+	★ Convert HTML snippets to shortcodes
+	★ Convert Javascript codes to shortcodes
+	★ Convert CSS codes to shortcodes
+	★ Support for snippet shortcodes in widgets
+	★ Dropdown menu in TinyMCE editor to pick snippet shortcodes easily
 
 = Features in Detail =
 
-Insert Html Snippet allows you to create shortcodes corresponding to html snippets. You can create a shortcode corresponding to any random HTML code such as ad codes, javascript, video embedding, etc. and use the same in your posts, pages or widgets. 
+Insert Html Snippet allows you to create shortcodes corresponding to html snippets. You can create a shortcode corresponding to any random HTML code such as ad codes, javascript codes, video embedding codes, css codes etc. and use the same in your posts, pages or widgets. 
 
-The shortcodes generated using the plugin are easily available as a dropdown in the standard wordpress content editor as well as widget settings, thereby giving you ease of integrating your HTML with your post or page.
+The shortcodes generated using the plugin are easily available as a dropdown in the standard wordpress content editor as well as in widget settings, thereby giving you ease of integrating your HTML snippets with your posts and pages.
 
 = About =
 
