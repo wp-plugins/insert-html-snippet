@@ -43,7 +43,7 @@ If you need any further help, you may contact our [support desk](http://xyzscrip
 
 Please check the wordpress version you are using. Make sure it meets the minimum version recommended by us. Make sure all files of the `insert html snippet` plugin uploaded to the folder `wp-content/plugins/`
 
-= 2. I have 2 html shortcodes placed ajacently, but one of them works. =
+= 2. I have 2 html shortcodes placed adjacently, but only one of them works. =
 
 Please use a whitespace to separate 2 shortcodes.
 
