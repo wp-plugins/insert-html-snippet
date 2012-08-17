@@ -2,7 +2,7 @@
 Contributors: f1logic
 Donate link: http://xyzscripts.com/donate/
 
-Tags: insert HTML, add HTML, adsense, ads, addthis code, flash , insert javascript, add javascript, insert css, add css, HTML to shortcode, integrate ad codes, raw html, embed html, html inserter, ad inserter, css inserter
+Tags: insert HTML, add HTML, insert adsense, insert ads, insert addthis code, insert flash , insert javascript, add javascript, insert css, add css, HTML to shortcode, integrate ad codes, raw html, embed html, html inserter, ad inserter, css inserter
 Requires at least: 3.0
 Tested up to: 3.4.1
 Stable tag: 1.0
