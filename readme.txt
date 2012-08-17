@@ -2,7 +2,7 @@
 Contributors: f1logic
 Donate link: http://xyzscripts.com/donate/
 
-Tags: insert HTML, add HTML,  insert javascript, add javascript, insert css, add css, HTML to shortcode, integrate ad codes, raw html, embed html, html inserter, ad inserter, css inserter
+Tags: insert HTML, add HTML, adsense, ads, addthis code, flash , insert javascript, add javascript, insert css, add css, HTML to shortcode, integrate ad codes, raw html, embed html, html inserter, ad inserter, css inserter
 Requires at least: 3.0
 Tested up to: 3.4.1
 Stable tag: 1.0
@@ -19,6 +19,7 @@ A quicklook into Insert Html Snippet
 	★ Convert CSS codes to shortcodes
 	★ Support for snippet shortcodes in widgets
 	★ Dropdown menu in TinyMCE editor to pick snippet shortcodes easily
+	★ Insert adcodes, social bookmarking code, flash, videos and  much more to your posts,pages and widgets
 
 = Features in Detail =
 
