@@ -2,7 +2,7 @@
 Contributors: f1logic
 Donate link: http://xyzscripts.com/donate/
 
-Tags: insert HTML, add HTML, adsense, ads, addthis code, flash , insert javascript, add javascript, insert css, add css, HTML to shortcode, integrate ad codes, raw html, embed html, html inserter, ad inserter, css inserter
+Tags: insert HTML, add HTML, insert adsense, insert ads, insert addthis code, insert flash , insert javascript, add javascript, insert css, add css, HTML to shortcode, integrate ad codes, raw html, embed html, html inserter, ad inserter, css inserter
 Requires at least: 3.0
 Tested up to: 3.4.1
 Stable tag: 1.0
@@ -19,11 +19,13 @@ A quicklook into Insert Html Snippet
 	★ Convert CSS codes to shortcodes
 	★ Support for snippet shortcodes in widgets
 	★ Dropdown menu in TinyMCE editor to pick snippet shortcodes easily
-	★ Insert adcodes, social bookmarking code, flash, videos and  much more to your posts,pages and widgets
+	★ Insert adsense or any adcode
+	★ Insert addthis or any	social bookmarking code
+	★ Insert flash, videos etc. to your posts,pages and widgets
 
 = Features in Detail =
 
-Insert Html Snippet allows you to create shortcodes corresponding to html snippets. You can create a shortcode corresponding to any random HTML code such as ad codes, javascript codes, video embedding codes, css codes etc. and use the same in your posts, pages or widgets. 
+Insert Html Snippet allows you to create shortcodes corresponding to html snippets. You can create a shortcode corresponding to any random HTML code such as ad codes (adsense or any adserver), javascript codes (addthis), video embedding codes, css codes etc. and use the same in your posts, pages or widgets. 
 
 The shortcodes generated using the plugin are easily available as a dropdown in the standard wordpress content editor as well as in widget settings, thereby giving you ease of integrating your HTML snippets with your posts and pages.
 
