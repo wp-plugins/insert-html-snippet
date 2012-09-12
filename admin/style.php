@@ -16,7 +16,7 @@
 	color: #000000;
 	text-align: center;
 	<?php
-	if(is_admin_bar_showing()){
+		if(function_exists('is_admin_bar_showing') && is_admin_bar_showing()){
 	?>
 	top	:28px;
 	<?php
