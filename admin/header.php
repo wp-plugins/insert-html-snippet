@@ -59,10 +59,10 @@ jQuery.ajax
 	<a onmouseover="tooltip.show('Please help us to keep this plugin free forever by donating a dollar');" onmouseout="tooltip.hide();" class="xyz_header_link" style="margin-left:8px;margin-right:12px;"   target="_blank" href="http://xyzscripts.com/donate/1">Donate</a>
 </td>
 <td style="float:right;">
-	<a class="xyz_header_link" style="margin-left:8px;" target="_blank" href="http://kb.xyzscripts.com/category/insert-html-snippet">FAQ</a>
+	<a class="xyz_header_link" style="margin-left:8px;" target="_blank" href="http://kb.xyzscripts.com/category/insert-html-snippet/">FAQ</a>
 </td>
 <td style="float:right;">
-	<a class="xyz_header_link" style="margin-left:8px;" target="_blank" href="http://docs.xyzscripts.com/category/insert-html-snippet">Docs</a>
+	<a class="xyz_header_link" style="margin-left:8px;" target="_blank" href="http://docs.xyzscripts.com/category/insert-html-snippet/">Docs</a>
 </td>
 <td style="float:right;">
 	<a class="xyz_header_link" style="margin-left:8px;" target="_blank" href="http://xyzscripts.com/wordpress-plugins/insert-html-snippet/details">About</a>
