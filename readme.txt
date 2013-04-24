@@ -33,7 +33,13 @@ The shortcodes generated using the plugin are easily available as a dropdown in 
 
 Insert Html Snippet is developed and maintained by [XYZScripts](http://xyzscripts.com/ "xyzscripts.com"). For any support, you may [contact us](http://xyzscripts.com/support/ "XYZScripts Support").
 
+★ [Insert HTML Snippet User Guide](http://docs.xyzscripts.com/wordpress-plugins/insert-html-snippet/ "Insert HTML Snippet User Guide")
+★ [Insert HTML Snippet FAQ](http://kb.xyzscripts.com/wordpress-plugins/insert-html-snippet/ "Insert HTML Snippet FAQ")
+
 == Installation ==
+
+★ [Insert HTML Snippet User Guide](http://docs.xyzscripts.com/wordpress-plugins/insert-html-snippet/ "Insert HTML Snippet User Guide")
+★ [Insert HTML Snippet FAQ](http://kb.xyzscripts.com/wordpress-plugins/insert-html-snippet/ "Insert HTML Snippet FAQ")
 
 1. Extract `insert-html-snippet.zip` to your `/wp-content/plugins/` directory.
 2. In the admin panel under plugins activate Insert Html Snippet.
@@ -41,6 +47,9 @@ Insert Html Snippet is developed and maintained by [XYZScripts](http://xyzscript
 If you need any further help, you may contact our [support desk](http://xyzscripts.com/support/ "XYZScripts Support").
 
 == Frequently Asked Questions ==
+
+★ [Insert HTML Snippet User Guide](http://docs.xyzscripts.com/wordpress-plugins/insert-html-snippet/ "Insert HTML Snippet User Guide")
+★ [Insert HTML Snippet FAQ](http://kb.xyzscripts.com/wordpress-plugins/insert-html-snippet/ "Insert HTML Snippet FAQ")
 
 = 1. The Insert Html Snippet is not working properly. =
 
@@ -70,6 +79,8 @@ NA
 	
 == More Information ==
 
+★ [Insert HTML Snippet User Guide](http://docs.xyzscripts.com/wordpress-plugins/insert-html-snippet/ "Insert HTML Snippet User Guide")
+★ [Insert HTML Snippet FAQ](http://kb.xyzscripts.com/wordpress-plugins/insert-html-snippet/ "Insert HTML Snippet FAQ")
 
 = Troubleshooting =
 
