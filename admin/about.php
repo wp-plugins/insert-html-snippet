@@ -37,18 +37,3 @@ can be used in your pages, posts and widgets.  Insert HTML Snippet is developed 
 <div style="clear: both;"></div>
 
 
-
-
-<h2>Other plugins</h2>
-<div>
-	<p>Do checkout other plugins from our team.</p>
-	<ul>
-		<li><a target="_blank"	href="http://wordpress.org/extend/plugins/lightbox-pop/">Lightbox Pop</a></li>
-		<li><a target="_blank"	href="http://xyzscripts.com/wordpress-plugins/lightbox-pop/details">Lightbox Pop Premium</a></li>
-		<li><a target="_blank"	href="http://wordpress.org/extend/plugins/newsletter-manager/">Newsletter Manager</a></li>
-		<li><a target="_blank"	href="http://wordpress.org/extend/plugins/contact-form-manager/">Contact Form Manager</a></li>
-
-	</ul>
-
-	<p></p>
-</div>

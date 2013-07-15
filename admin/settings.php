@@ -36,11 +36,11 @@ $_POST = stripslashes_deep($_POST);
 
 <div>
 
-	<h2>Settings</h2>
+	
 	<form method="post">
 	<div style="float: left;width: 98%">
 	<fieldset style=" width:100%; border:1px solid #F7F7F7; padding:10px 0px 15px 10px;">
-	<legend >General</legend>
+	<legend ><h3>Settings</h3></legend>
 	<table class="widefat"  style="width:99%;">
 						<tr valign="top">
 				<td scope="row" ><label for="xyz_ihs_credit">Credit link to author</label>
@@ -54,30 +54,23 @@ $_POST = stripslashes_deep($_POST);
 				</select>
 				</td>
 			</tr>
+			
 			<tr valign="top">
-				<td scope="row" class=" settingInput" id="bottomBorderNone"><label for="xyz_ihs_limit">Pagination limit</label>
-				</td>
-				<td id="bottomBorderNone"><input  name="xyz_ihs_limit" type="text"
+				<td scope="row" class=" settingInput" id=""><label for="xyz_ihs_limit">Pagination limit</label></td>
+				<td id=""><input  name="xyz_ihs_limit" type="text"
 					id="xyz_ihs_limit" value="<?php if(isset($_POST['xyz_ihs_limit']) ){echo abs(intval($_POST['xyz_ihs_limit']));}else{print(get_option('xyz_ihs_limit'));} ?>" />
+				</td>
+			</tr>
+			
+			<tr valign="top">
+				<td scope="row" class=" settingInput" id="bottomBorderNone">
+				</td>
+				<td id="bottomBorderNone"><input style="margin:10px 0 20px 0;" id="submit" class="button-primary bottonWidth" type="submit" value=" Update Settings " />
 				</td>
 			</tr>
 			
 	</table>
 	</fieldset>
-	
-	<fieldset style=" width:100%;padding:10px 0px 15px 10px;">
-	<legend></legend>
-	<table class="widefat"  style="width:99%; margin-top:10px;">
-			<tr>
-				<td colspan=2 id="bottomBorderNone" style="text-align: center;">
-				<div style="height:50px;"><input style="margin:10px 0 20px 0;" id="submit" class="button-primary bottonWidth" type="submit" value=" Update Settings " /></div>
-				
-				</td>
-			</tr>
-			
-		</table>
-		</fieldset>
-	
 	
 	</div>
 

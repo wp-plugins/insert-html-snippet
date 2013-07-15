@@ -64,19 +64,19 @@ id="system_notice_area_dismiss">Dismiss</span>
 	<form method="post">
 		<fieldset
 			style="width: 99%; border: 1px solid #F7F7F7; padding: 10px 0px;">
-			<legend>HTML Snippets</legend>
+			<legend><h3>HTML Snippets</h3></legend>
 			<?php 
 			global $wpdb;
 			$pagenum = isset( $_GET['pagenum'] ) ? absint( $_GET['pagenum'] ) : 1;
-			$limit = 20;			
+			$limit = get_option('xyz_ihs_limit');			
 			$offset = ( $pagenum - 1 ) * $limit;
 			
 			
 			$entries = $wpdb->get_results( "SELECT * FROM ".$wpdb->prefix."xyz_ihs_short_code  ORDER BY id DESC LIMIT $offset,$limit" );
 			
 			?>
-			<input class="button-primary" id="textFieldButton2"
-				style="cursor: pointer; margin-bottom:10px;" type="button"
+			<input  id="submit_ihs"
+				style="cursor: pointer; margin-bottom:10px; margin-left:8px;" type="button"
 				name="textFieldButton2" value="Add New HTML Snippet"
 				 onClick='document.location.href="<?php echo admin_url('admin.php?page=insert-html-snippet-manage&action=snippet-add');?>"'>
 			<table class="widefat" style="width: 99%; margin: 0 auto; border-bottom:none;">
@@ -162,25 +162,22 @@ id="system_notice_area_dismiss">Dismiss</span>
 				</tbody>
 			</table>
 			
-			<input class="button-primary" id="textFieldButton2"
-				style="cursor: pointer; margin-top:10px;" type="button"
+			<input  id="submit_ihs"
+				style="cursor: pointer; margin-top:10px;margin-left:8px;" type="button"
 				name="textFieldButton2" value="Add New HTML Snippet"
 				 onClick='document.location.href="<?php echo admin_url('admin.php?page=insert-html-snippet-manage&action=snippet-add');?>"'>
 			
-			<?
-			
-			
-			
+			<?php
 			$total = $wpdb->get_var( "SELECT COUNT(`id`) FROM ".$wpdb->prefix."xyz_ihs_short_code" );
 			$num_of_pages = ceil( $total / $limit );
 
 			$page_links = paginate_links( array(
 					'base' => add_query_arg( 'pagenum','%#%'),
-	    'format' => '',
-	    'prev_text' =>  '&laquo;',
-	    'next_text' =>  '&raquo;',
-	    'total' => $num_of_pages,
-	    'current' => $pagenum
+				    'format' => '',
+				    'prev_text' =>  '&laquo;',
+				    'next_text' =>  '&raquo;',
+				    'total' => $num_of_pages,
+				    'current' => $pagenum
 			) );
 
 

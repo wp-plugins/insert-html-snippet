@@ -1,13 +1,13 @@
 <?php
-require( dirname( __FILE__ ) . '../../../../../wp-load.php' );
-if(!current_user_can('manage_options')){
-	exit;
-}
-global $wpdb;
+add_action('wp_ajax_ajax_backlink', 'xyz_ihs_ajax_backlink');
+function xyz_ihs_ajax_backlink() {
 
-if($_POST){
+	global $wpdb;
 	
-	update_option('xyz_credit_link','ihs');
+	if($_POST){
+		update_option('xyz_credit_link','ihs');
+		
+	}
 }
 
 

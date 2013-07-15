@@ -11,27 +11,23 @@ if(get_option('xyz_credit_link')=="0"){
 	
 	Please do a favour by enabling backlink to our site. <a id="xyz_ihs_backlink" style="cursor: pointer;" >Okay, Enable</a>.
 <script type="text/javascript">
-jQuery(document).ready(function() {
+
+	jQuery(document).ready(function() {
 
 	jQuery('#xyz_ihs_backlink').click(function() {
-	
-jQuery.ajax
-	({
-	type: "POST",
-	url: "<?php echo plugins_url('insert-html-snippet/admin/ajax-backlink.php') ?>",
-	data: 'enable=1',
-	cache: false,
-	success: function(html)
-	{	
-		jQuery("#xyz_backlink_div").html('Thank you for enabling backlink !');
-		jQuery("#xyz_backlink_div").css('background-color', '#D8E8DA');
-		jQuery("#xyz_backlink_div").css('border', '1px solid #0F801C');
-	}
-	});
-	
+	var dataString = { 
+			action: 'ajax_backlink', 
+			enable: 1
+		};
 
+		jQuery.post(ajaxurl, dataString, function(response) {
+			jQuery("#xyz_backlink_div").html('Thank you for enabling backlink !');
+			jQuery("#xyz_backlink_div").css('background-color', '#D8E8DA');
+			jQuery("#xyz_backlink_div").css('border', '1px solid #0F801C');
+		});	
+	});
 });
-});
+
 </script>
 </div>
 	<?php 

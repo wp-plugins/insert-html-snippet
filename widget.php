@@ -1,9 +1,10 @@
 <?php
+
 /**
  * XYZScripts Insert HTML Snippet Widget Class
  */
-require( dirname( __FILE__ ) . '../../../../wp-load.php' );
 
+////*****************************Sidebar Widget**********************************////
 
 class Xyz_Insert_Html_Widget extends WP_Widget {
  
@@ -46,8 +47,19 @@ class Xyz_Insert_Html_Widget extends WP_Widget {
     	global $wpdb;
     	$entries = $wpdb->get_results( "SELECT * FROM ".$wpdb->prefix."xyz_ihs_short_code WHERE status='1'  ORDER BY id DESC" );
     	
-        $title 		= esc_attr($instance['title']);
-        $message	= esc_attr($instance['message']);
+    	
+    	if(isset($instance['title'])){
+    		$title	= esc_attr($instance['title']);
+    	}else{
+    		$title = '';
+    	}
+    	
+    	if(isset($instance['message'])){
+    		$message	= esc_attr($instance['message']);
+    	}else{
+    		$message = '';
+    	}
+    	
         ?>
          <p>
           <label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:'); ?></label> 
