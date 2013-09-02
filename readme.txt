@@ -4,7 +4,7 @@ Donate link: http://xyzscripts.com/donate/
 
 Tags: insert HTML, add HTML, insert adsense, insert ads, insert addthis code, insert flash , insert javascript, add javascript, insert css, add css, HTML to shortcode, integrate ad codes, raw html, embed html, html inserter, ad inserter, css inserter
 Requires at least: 2.8
-Tested up to: 3.5.2
+Tested up to: 3.6
 Stable tag: 1.0.1
 License: GPLv2 or later
 
