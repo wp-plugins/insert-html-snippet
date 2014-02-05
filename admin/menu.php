@@ -62,23 +62,21 @@ function xyz_ihs_about(){
 	require( dirname( __FILE__ ) . '/footer.php' );
 }
 
-if(is_admin()){
-	
+
+function xyz_ihs_add_style_script(){
+
 	wp_enqueue_script('jquery');
 	
 	wp_register_script( 'xyz_notice_script', plugins_url('insert-html-snippet/js/notice.js') );
 	wp_enqueue_script( 'xyz_notice_script' );
-
-// 	wp_register_style( 'xyz_ihs_style', plugins_url('insert-html-snippet/css/xyz_ihs_styles.css'));
-// 	wp_enqueue_style( 'xyz_ihs_style');
-	function xyz_ihs_add_style(){
-		// Register stylesheets
-		wp_register_style('xyz_ihs_style', plugins_url('insert-html-snippet/css/xyz_ihs_styles.css'));
-		wp_enqueue_style('xyz_ihs_style');
-	}
-	add_action('init', 'xyz_ihs_add_style');
-
+	
+	
+	// Register stylesheets
+	wp_register_style('xyz_ihs_style', plugins_url('insert-html-snippet/css/xyz_ihs_styles.css'));
+	wp_enqueue_style('xyz_ihs_style');
 }
+add_action('admin_enqueue_scripts', 'xyz_ihs_add_style_script');
+
 
 
 ?>
