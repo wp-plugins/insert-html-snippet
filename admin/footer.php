@@ -121,8 +121,10 @@ type="text" value="<?php 	echo $current_user->user_email; ?>" /><span style="col
   <div style="width: 100%">
 
 <div class="xyz_our_plugins">
-See Also : 
+Our Plugins : 
+
 	
+	<a target="_blank"	href="http://wordpress.org/extend/plugins/insert-html-snippet/">Insert HTML Snippet</a> ★
 	<a target="_blank"	href="http://wordpress.org/extend/plugins/lightbox-pop/">Lightbox Pop</a> ★
 	<a target="_blank"	href="http://wordpress.org/extend/plugins/full-screen-popup/">Full Screen Popup</a> ★
 	<a target="_blank"	href="http://wordpress.org/extend/plugins/popup-dialog-box/">Popup Dialog Box</a> ★
@@ -130,8 +132,11 @@ See Also :
 	<a target="_blank"	href="http://wordpress.org/extend/plugins/quick-box-popup/">Quick Box Popup</a> ★
 	<a target="_blank"	href="http://wordpress.org/extend/plugins/contact-form-manager/">Contact Form Manager</a> ★
 	<a target="_blank"	href="http://wordpress.org/extend/plugins/newsletter-manager/">Newsletter Manager</a> ★
-	<a target="_blank"	href="http://wordpress.org/extend/plugins/social-media-auto-publish/">Social Media Auto Publish</a>
-
+	<a target="_blank"	href="http://wordpress.org/extend/plugins/social-media-auto-publish/">Social Media Auto Publish</a>★
+    <a target="_blank"	href="http://wordpress.org/extend/plugins/facebook-auto-publish/">Facebook Auto Publish</a> ★
+	<a target="_blank"	href="http://wordpress.org/extend/plugins/linkedin-auto-publish/">LinkedIn Auto Publish</a> ★
+	<a target="_blank"	href="http://wordpress.org/extend/plugins/twitter-auto-publish/">Twitter Auto Publish</a> ★
+	<a target="_blank"	href="http://wordpress.org/extend/plugins/insert-php-code-snippet/">Insert PHP Code Snippet</a> 
 </div>
  </div>   
 <div class="poweredBy">

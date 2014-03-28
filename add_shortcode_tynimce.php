@@ -3,7 +3,7 @@
 if(!class_exists('XYZ_Insert_Html_TinyMCESelector')):
 
 class XYZ_Insert_Html_TinyMCESelector{
-	var $buttonName = 'xyz_ihs_snippet_selecter';
+	var $buttonName = 'xyz_ihs_snippet_selector';
 	function addSelector(){
 		// Don't bother doing this stuff if the current user lacks permissions
 		if ( ! current_user_can('edit_posts') && ! current_user_can('edit_pages') )
@@ -24,14 +24,7 @@ class XYZ_Insert_Html_TinyMCESelector{
 	}
 	
 	function registerTmcePlugin($plugin_array){
-		
-		
-		//$xyz_em_confLink = get_site_url()."/index.php?wp_nlm=confirmation&eId=".$xyz_em_emailLastId."&lId=".$listId."&both=".$combineValue."&appurl=".$xyz_em_appendUrl;
-		
 		$plugin_array[$this->buttonName] =get_site_url() . '/index.php?wp_ihs=editor_plugin_js';
-		
-		//$plugin_array[$this->buttonName] = plugins_url() . '/insert-html-snippet/editor_plugin.js.php';
-		
 		if ( get_user_option('rich_editing') == 'true') 
 		 	//var_dump($plugin_array);
 		return $plugin_array;
@@ -45,3 +38,4 @@ if(!isset($shortcodesXYZEH)){
 	add_action('admin_head', array($shortcodesXYZEH, 'addSelector'));
 }
 
+?>

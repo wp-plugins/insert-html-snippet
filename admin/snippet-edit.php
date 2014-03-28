@@ -15,14 +15,18 @@ if(isset($_POST) && isset($_POST['updateSubmit'])){
 	$_POST = xyz_trim_deep($_POST);
 	
 	$xyz_ihs_snippetId = $_GET['snippetId'];
+	
+	$temp_xyz_ihs_title = str_replace(' ', '', $_POST['snippetTitle']);
+	$temp_xyz_ihs_title = str_replace('-', '', $temp_xyz_ihs_title);
+	
 	$xyz_ihs_title = str_replace(' ', '-', $_POST['snippetTitle']);
 	$xyz_ihs_content = $_POST['snippetContent'];
 
 	if($xyz_ihs_title != "" && $xyz_ihs_content != ""){
 		
-		if(ctype_alnum($xyz_ihs_title))
+		if(ctype_alnum($temp_xyz_ihs_title))
 		{
-		$snippet_count = $wpdb->query( 'SELECT * FROM '.$wpdb->prefix.'xyz_ihs_short_code WHERE id!="'.$xyz_ihs_snippetId.'" AND title="'.$xyz_ihs_title.'" LIMIT 0,1' ) ;
+		$snippet_count = $wpdb->query($wpdb->prepare( 'SELECT * FROM '.$wpdb->prefix.'xyz_ihs_short_code WHERE id!=%d AND title=%s LIMIT 0,1',$xyz_ihs_snippetId,$xyz_ihs_title)) ;
 		
 		if($snippet_count == 0){
 			$xyz_shortCode = '[xyz-ihs snippet="'.$xyz_ihs_title.'"]';
@@ -44,7 +48,7 @@ if(isset($_POST) && isset($_POST['updateSubmit'])){
 		{
 			?>
 		<div class="system_notice_area_style0" id="system_notice_area">
-		HTML Snippet title must be alphanumeric. &nbsp;&nbsp;&nbsp;<span id="system_notice_area_dismiss">Dismiss</span>
+		HTML Snippet title can have only alphabets,numbers or hyphen. &nbsp;&nbsp;&nbsp;<span id="system_notice_area_dismiss">Dismiss</span>
 		</div>
 		<?php
 		
@@ -65,7 +69,7 @@ if(isset($_POST) && isset($_POST['updateSubmit'])){
 global $wpdb;
 
 
-$snippetDetails = $wpdb->get_results( 'SELECT * FROM '.$wpdb->prefix.'xyz_ihs_short_code WHERE id="'.$xyz_ihs_snippetId.'" LIMIT 0,1' ) ;
+$snippetDetails = $wpdb->get_results($wpdb->prepare( 'SELECT * FROM '.$wpdb->prefix.'xyz_ihs_short_code WHERE id=%d LIMIT 0,1',$xyz_ihs_snippetId )) ;
 $snippetDetails = $snippetDetails[0];
 
 ?>

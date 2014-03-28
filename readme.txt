@@ -4,8 +4,8 @@ Donate link: http://xyzscripts.com/donate/
 
 Tags: insert HTML, add HTML, insert adsense, insert ads, insert addthis code, insert flash , insert javascript, add javascript, insert css, add css, HTML to shortcode, integrate ad codes, raw html, embed html, html inserter, ad inserter, css inserter
 Requires at least: 2.8
-Tested up to: 3.6
-Stable tag: 1.0.1
+Tested up to: 3.8.1
+Stable tag: 1.1
 License: GPLv2 or later
 
 Add HTML, CSS and javascript code to your pages and posts easily using shortcodes.
@@ -51,11 +51,15 @@ If you need any further help, you may contact our [support desk](http://xyzscrip
 ★ [Insert HTML Snippet User Guide](http://docs.xyzscripts.com/wordpress-plugins/insert-html-snippet/ "Insert HTML Snippet User Guide")
 ★ [Insert HTML Snippet FAQ](http://kb.xyzscripts.com/wordpress-plugins/insert-html-snippet/ "Insert HTML Snippet FAQ")
 
-= 1. The Insert Html Snippet is not working properly. =
+= The Insert Html Snippet is not working properly. =
 
 Please check the wordpress version you are using. Make sure it meets the minimum version recommended by us. Make sure all files of the `insert html snippet` plugin uploaded to the folder `wp-content/plugins/`
 
-= 2. I have 2 html shortcodes placed adjacently, but only one of them works. =
+= Can I use shortcodes in html snippet ? =
+
+Yes ofcourse.
+
+= I have 2 html shortcodes placed adjacently, but only one of them works. =
 
 Please use a whitespace to separate 2 shortcodes.
 
@@ -70,6 +74,11 @@ More questions ? [Drop a mail](http://xyzscripts.com/members/support/ "XYZScript
 
 
 == Changelog ==
+
+= 1.1 =
+* Support for shortcodes in html content
+* Snippet chooser TinyMCE plugin modified
+* A few bug fixes
 
 = 1.0.1 =
 * Support for network installation

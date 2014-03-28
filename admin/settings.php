@@ -75,3 +75,4 @@ $_POST = stripslashes_deep($_POST);
 	</div>
 
 	</form>
+</div>

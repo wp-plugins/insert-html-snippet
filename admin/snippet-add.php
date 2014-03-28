@@ -11,11 +11,14 @@ if(isset($_POST) && isset($_POST['addSubmit'])){
 // 		print_r($_POST);
 // 		die("JJJ");
 
+	$temp_xyz_ihs_title = str_replace(' ', '', $_POST['snippetTitle']);
+	$temp_xyz_ihs_title = str_replace('-', '', $temp_xyz_ihs_title);
+	
 	$xyz_ihs_title = str_replace(' ', '-', $_POST['snippetTitle']);
 	$xyz_ihs_content = $_POST['snippetContent'];
 
 	if($xyz_ihs_title != "" && $xyz_ihs_content != ""){
-		if(ctype_alnum($xyz_ihs_title))
+		if(ctype_alnum($temp_xyz_ihs_title))
 		{
 		
 		$snippet_count = $wpdb->query( 'SELECT * FROM '.$wpdb->prefix.'xyz_ihs_short_code WHERE title="'.$xyz_ihs_title.'"' ) ;
@@ -37,7 +40,7 @@ if(isset($_POST) && isset($_POST['addSubmit'])){
 		{
 			?>
 		<div class="system_notice_area_style0" id="system_notice_area">
-		HTML Snippet title must be alphanumeric. &nbsp;&nbsp;&nbsp;<span id="system_notice_area_dismiss">Dismiss</span>
+		HTML Snippet title can have only alphabets,numbers or hyphen. &nbsp;&nbsp;&nbsp;<span id="system_notice_area_dismiss">Dismiss</span>
 		</div>
 		<?php
 		
