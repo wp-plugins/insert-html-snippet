@@ -82,7 +82,7 @@ z-index:100000;
 	}
 
 
-		.xyz_suggest,.xyz_star,.xyz_donate,.xyz_fbook,.xyz_support,.xyz_twitt,.xyz_gplus{
+		.xyz_suggest,.xyz_star,.xyz_donate,.xyz_fbook,.xyz_support,.xyz_twitt,.xyz_gplus,.xyz_linkedin{
 	height:16px;
 	background-repeat: no-repeat;
 	background-position: left center;
@@ -125,11 +125,12 @@ z-index:100000;
 	
 	background-image: url('../images/gplus.png');
 }
-
-
-#insert-html-snippet .xyz_gplus{
-margin-left: 3px;
+.xyz_linkedin{
+	
+	background-image: url('../images/linkedin.png');
 }
+
+
 
 #insert-html-snippet .plugin-version-author-uri {
 	
