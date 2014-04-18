@@ -8,16 +8,45 @@
 	
 	global $wpdb;
 
+
+$xyz_snippets_arr=$wpdb->get_results($wpdb->prepare( "SELECT id,title FROM ".$wpdb->prefix."xyz_ihs_short_code WHERE status=%d  ORDER BY id DESC",1),ARRAY_A );
+// 		print_r($xyz_snippets_arr);
+if(count($xyz_snippets_arr)==0)
+die;
+
+if(floatval(get_bloginfo('version'))>=3.9)
+{
+?>
+(function() {
+
+ tinymce.PluginManager.add('<?php echo $shortcodesXYZEH->buttonName; ?>', function( editor, url ) {
+        editor.addButton( '<?php echo $shortcodesXYZEH->buttonName; ?>', {
+            title: 'Insert HTML Snippet',
+            type: 'menubutton',
+            icon: 'icon xyz-ihs-own-icon',
+            menu: [
+<?php foreach ($xyz_snippets_arr as $key=>$val) { ?>            
+            	{
+            		text: '<?php echo addslashes($val['title']); ?>',
+            		value: '[xyz-ihs snippet="<?php echo addslashes($val['title']); ?>"]',
+            		onclick: function() {
+            			editor.insertContent(this.value());
+            		}
+           		},
+<?php } ?>           		
+           ]
+        });
+    });
+
+})();
+<?php } else { 
+
 	$xyz_snippets = array(
                 'title'   =>'Insert HTML Snippet',
 				'url'	=> plugins_url('insert-html-snippet/images/logo.png'),
-                'xyz_ihs_snippets' => $wpdb->get_results($wpdb->prepare( "SELECT id,title FROM ".$wpdb->prefix."xyz_ihs_short_code WHERE status=%d  ORDER BY id DESC",1,ARRAY_A ))
+                'xyz_ihs_snippets' => $xyz_snippets_arr
             );
-
-if(count($xyz_snippets[ 'xyz_ihs_snippets'])==0)
-die;
-
-?>
+	?>
 
 var tinymce_<?php echo $shortcodesXYZEH->buttonName; ?> =<?php echo json_encode($xyz_snippets) ?>;
 
@@ -37,7 +66,7 @@ var tinymce_<?php echo $shortcodesXYZEH->buttonName; ?> =<?php echo json_encode(
 		init : function(ed, url) {
 
          tinymce_<?php echo $shortcodesXYZEH->buttonName; ?>.insert = function(){
-                if(this.v != ''){
+                if(this.v && this.v != ''){
                 tinymce.execCommand('mceInsertContent', false, '[xyz-ihs snippet="'+tinymce_<?php echo $shortcodesXYZEH->buttonName; ?>.xyz_ihs_snippets[this.v]['title']+'"]');
 				}
             };
@@ -90,3 +119,4 @@ var tinymce_<?php echo $shortcodesXYZEH->buttonName; ?> =<?php echo json_encode(
 	tinymce.PluginManager.add('<?php echo $shortcodesXYZEH->buttonName; ?>', tinymce.plugins.<?php echo $shortcodesXYZEH->buttonName; ?>);
 })();
 
+<?php } ?>

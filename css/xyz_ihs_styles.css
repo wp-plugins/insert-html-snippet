@@ -302,3 +302,6 @@ background-position: left  bottom;
     padding:0;
     }
     
+i.xyz-ihs-own-icon {
+	background-image: url('../images/logo.png');
+}

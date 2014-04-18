@@ -1,9 +1,7 @@
 <?php
 
-if ( is_admin() ){
-
 	add_action('admin_menu', 'xyz_ihs_menu');
-}
+
 
 function xyz_ihs_menu(){
 	

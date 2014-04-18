@@ -38,4 +38,4 @@ function xyz_ihs_display_content($xyz_snippet_name){
 }
 
 
-//add_filter('widget_text', 'do_shortcode');
+add_filter('widget_text', 'do_shortcode'); // to run shortcodes in text widgets
