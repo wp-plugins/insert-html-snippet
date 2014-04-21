@@ -130,36 +130,6 @@ z-index:100000;
 	background-image: url('../images/linkedin.png');
 }
 
-
-
-#insert-html-snippet .plugin-version-author-uri {
-	
-	background-color: #F4F4F4;
-	min-height:16px;
-	border-radius:5px;
-	margin-bottom: 10px;
-	font-weight:bold;
-	padding: 5px;
-	color: #111111;
-
--webkit-box-shadow: 0 8px 6px -6px black;
-	   -moz-box-shadow: 0 8px 6px -6px black;
-	        box-shadow: 0 8px 6px -6px black;
-	        
-}
-#insert-html-snippet{
-background: #a9e8f5; /* Old browsers */
-
-background: -moz-linear-gradient(top,  #ffffff 0%, #a9e8f5 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#a9e8f5)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #ffffff 0%,#a9e8f5 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #ffffff 0%,#a9e8f5 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  #ffffff 0%,#a9e8f5 100%); /* IE10+ */
-background: linear-gradient(top,  #ffffff 0%,#a9e8f5 100%); /* W3C */
-
-
-}
-
 #insert-html-snippet .plugin-version-author-uri {
 	
 	background-color: #F4F4F4;
@@ -181,15 +151,6 @@ background: linear-gradient( #ffffff,#a9e8f5 ); /* W3C */
 
 
 }
-
-#insert-html-snippet .plugin-title{
-
-background: url('../images/xyz_logo.png'),linear-gradient( #ffffff,#a9e8f5 );
-background-repeat: no-repeat;
-background-position: left  bottom;
-
-}
-
 
 #insert-html-snippet .plugin-version-author-uri a#xyz_update,
 #insert-html-snippet.plugin-version-author-uri a#xyz_update:link,
@@ -221,7 +182,7 @@ color:#cc811a;
 }
 #insert-html-snippet .plugin-title{
 
-background-image: url('../images/xyz_logo.png');
+background: url('../images/xyz_logo.png'),linear-gradient( #ffffff,#a9e8f5 );
 background-repeat: no-repeat;
 background-position: left  bottom;
 

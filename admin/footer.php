@@ -9,9 +9,10 @@
 
    
    <a target="_blank" href="http://xyzscripts.com/support/" class="xyz_suggest">Suggestions</a> - 
-   <a target="_blank" href="http://facebook.com/xyzscripts" class="xyz_fbook">Like us on facebook</a> -   
-   <a target="_blank" href="http://twitter.com/xyzscripts" class="xyz_twitt">Follow us on twitter</a> -   
-   <a target="_blank" href="https://plus.google.com/101215320403235276710/" class="xyz_gplus">+1 us on Google+</a>
+   <a target="_blank" href="http://facebook.com/xyzscripts" class="xyz_fbook">Like us on Facebook</a> -   
+   <a target="_blank" href="http://twitter.com/xyzscripts" class="xyz_twitt">Follow us on Twitter</a> -   
+   <a target="_blank" href="https://plus.google.com/+Xyzscripts/" class="xyz_gplus">+1 us on Google+</a> - 
+   <a target="_blank" href="http://www.linkedin.com/company/xyzscripts" class="xyz_linkedin">Follow us on LinkedIn</a>   
       
    
     </div>
